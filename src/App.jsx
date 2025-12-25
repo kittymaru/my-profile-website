@@ -4,7 +4,7 @@ import './App.css'
 
 function App() {
   return (
-    <>placeholder</>
+    <div className="text-red-500">placeholder</div>
   )
 }
 
