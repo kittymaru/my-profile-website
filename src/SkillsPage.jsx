@@ -7,16 +7,19 @@ function SkillsPage() {
 
       <div className="grid grid-cols-2 gap-6 max-w-4xl mx-auto">
         <div className="rounded-2xl p-6 bg-white shadow-md hover:scale-120 transition-transform duration-200 font-mono">
-          <p className="font-bold">Programming Languages</p>
+          <p className="font-bold mb-2">Programming Languages</p>
+          <p>C, Java, Shell, JavaScript, TypeScript, Python, HTML, CSS</p>
         </div>
         <div className="rounded-2xl p-6 bg-white shadow-md hover:scale-120 transition-transform duration-200 font-mono">
-          <p className="font-bold">Frameworks and Libraries</p>
+          <p className="font-bold mb-2">Frameworks and Libraries</p>
+          <p>React, TailwindCSS, Express.js, Jest.js, Node.js</p>
         </div>
         <div className="rounded-2xl p-6 bg-white shadow-md hover:scale-120 transition-transform duration-200 font-mono">
-          <p className="font-bold">Developer Tools</p>
+          <p className="font-bold mb-2">Developer Tools</p>
+          <p>Git, VSCode</p>
         </div>
         <div className="rounded-2xl p-6 bg-white shadow-md hover:scale-120 transition-transform duration-200 font-mono">
-          <p className="font-bold">Databases</p>
+          <p className="font-bold mb-2">Databases</p>
         </div>
       </div>
     </>
