@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { Routes, Route, useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react'
+import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 import './App.css'
 
 import EducationPage from './EducationPage';
@@ -9,6 +9,7 @@ import ProjectsPage from './ProjectsPage';
 
 function App() {
   const navigate = useNavigate();
+  const location = useLocation().pathname;
 
   return (
     <>
@@ -35,6 +36,10 @@ function App() {
             onClick={() => navigate("/projects")}>Projects</p>
         </div>
       </nav>
+
+      {location === "/" && (
+        <p className="animate-pulse text-5xl text-rose-900">welcome to my page :)</p>
+      )}
 
       <nav className="m-0 h-[50px] w-full fixed left-0 right-0 bg-red-200 flex flex-row px-10 bottom-0 justify-evenly text-center">
         <div className="flex items-center justify-center justify-evenly text-center">
