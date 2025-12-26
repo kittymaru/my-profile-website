@@ -39,8 +39,8 @@ function App() {
 
       {location === "/" && (
         <>
-          <p className="animate-pulse text-5xl text-rose-900 mb-5">welcome to my page :)</p>
-          <p className="animate-pulse text-xl text-rose-900">click on any header text to continue</p>
+          <p className="animate-pulse text-5xl text-rose-900 mb-5 font-mono">welcome to my page :)</p>
+          <p className="animate-pulse text-xl text-rose-900 font-mono">click on any header text to continue</p>
         </>
       )}
 

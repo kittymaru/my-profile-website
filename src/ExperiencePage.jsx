@@ -24,7 +24,8 @@ function ExperiencePage() {
 
         <p className="text-sm text-rose-900 italic font-mono mb-2">Marketing Subcommittee, Mar. 2025 – Sep. 2025</p>
         <li className="text-sm text-rose-900 font-mono mb-2">Created promotional materials for AUNSW events and sponsors.</li>
-        <li className="text-sm text-rose-900 font-mono mb-5">Operated society Rednote account, including translating posts into Chinese and answering questions regarding events and memberships (shortlisted for 2025 Arc Clubs Community Outstanding New Initiative Award)</li>
+        <li className="text-sm text-rose-900 font-mono mb-2">Operated society Rednote account, including translating posts into Chinese and answering questions regarding events and memberships</li>
+        <li className="text-sm text-rose-900 font-mono mb-5">Shortlisted for 2025 Arc Clubs Community Outstanding New Initiative Award.</li>
 
         <p className="text-lg text-rose-900 underline font-mono">UNSW Nintendo Society</p>
         <p className="text-sm text-rose-900 italic font-mono mb-2">Events Director, Mar. 2025 – Dec. 2025</p>
