@@ -2,22 +2,37 @@ import { useState } from 'react'
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import './App.css'
 
+import EducationPage from './EducationPage';
+import ExperiencePage from './ExperiencePage';
+import SkillsPage from './SkillsPage';
+import ProjectsPage from './ProjectsPage';
+
 function App() {
+  const navigate = useNavigate();
+
   return (
     <>
       <nav className="m-0 h-[80px] w-full fixed left-0 right-0 bg-red-200 flex flex-row px-10 top-0 justify-evenly text-center">
         <div className="flex items-center mr-auto">
-          <p className="text-4xl font-bold font-mono text-rose-900 hover:text-rose-700 hover:underline">Cathy Yu</p>
+          <p className="text-4xl font-bold font-mono text-rose-900 hover:text-rose-700 hover:underline"
+            onClick={() => navigate("/")}>Cathy Yu</p>
         </div>
 
         <div className="flex items-center">
-          <p className="text-2xl font-bold font-mono text-rose-900 mr-5 hover:text-rose-700 hover:underline">Education</p>
+          <p className="text-2xl font-bold font-mono text-rose-900 mr-5 hover:text-rose-700 hover:underline"
+            onClick={() => navigate("/education")}>Education</p>
           <p className="text-3xl font-bold font-mono text-rose-900 mr-5">|</p>
-          <p className="text-2xl font-bold font-mono text-rose-900 mr-5 hover:text-rose-700 hover:underline">Experience</p>
+
+          <p className="text-2xl font-bold font-mono text-rose-900 mr-5 hover:text-rose-700 hover:underline"
+            onClick={() => navigate("/experience")}>Experience</p>
           <p className="text-3xl font-bold font-mono text-rose-900 mr-5">|</p>
-          <p className="text-2xl font-bold font-mono text-rose-900 mr-5 hover:text-rose-700 hover:underline">Skills</p>
+
+          <p className="text-2xl font-bold font-mono text-rose-900 mr-5 hover:text-rose-700 hover:underline"
+            onClick={() => navigate("/skills")}>Skills</p>
           <p className="text-3xl font-bold font-mono text-rose-900 mr-5">|</p>
-          <p className="text-2xl font-bold font-mono text-rose-900 mr-5 hover:text-rose-700 hover:underline">Projects</p>
+
+          <p className="text-2xl font-bold font-mono text-rose-900 mr-5 hover:text-rose-700 hover:underline"
+            onClick={() => navigate("/projects")}>Projects</p>
         </div>
       </nav>
 
@@ -30,6 +45,13 @@ function App() {
             onClick={() => window.open("https://www.linkedin.com/in/cathy-yu-938b6b261/")}></img>
         </div>
       </nav>
+
+      <Routes>
+        <Route path="/education" element={<EducationPage />} />
+        <Route path="/experience" element={<ExperiencePage />} />
+        <Route path="/skills" element={<SkillsPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+      </Routes>
     </>
   )
 }
