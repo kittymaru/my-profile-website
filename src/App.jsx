@@ -38,7 +38,10 @@ function App() {
       </nav>
 
       {location === "/" && (
-        <p className="animate-pulse text-5xl text-rose-900">welcome to my page :)</p>
+        <>
+          <p className="animate-pulse text-5xl text-rose-900 mb-5">welcome to my page :)</p>
+          <p className="animate-pulse text-xl text-rose-900">click on any header text to continue</p>
+        </>
       )}
 
       <nav className="m-0 h-[50px] w-full fixed left-0 right-0 bg-red-200 flex flex-row px-10 bottom-0 justify-evenly text-center">
